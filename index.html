@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Timers app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="alarm-tone" src="utils/alarm.wav" controls></audio>
+    <div class="display-flex-col-center" id="main-box">
+        <div>
+            <p id="heading">Multiple Timers App</p>
+        </div>
+        <div id="timer-div" class="timer-div">
+            <div class="display-flex-row-center gap-2rem timer-box">
+                <p id="set-time">Set Time :</p>
+                <div id="time-count" class="display-flex-row-center">
+                    <p id="hour" contenteditable="true">hh</p>
+                    <p>:</p>
+                    <p id="min" contenteditable="true">mm</p>
+                    <p>:</p>
+                    <p id="sec" contenteditable="true">ss</p>
+                </div>
+                <div id="set-btn">Set</div>
+            </div>
+        </div>
+        <div id="current-timers-btn">Current Timers</div>
+
+        <div id="timers-list" class="display-flex-col-center gap-2rem">
+            <div id="current-timers">You have no timers currently</div>
+           
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
